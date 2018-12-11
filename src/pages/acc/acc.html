@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Acessórios</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h3>Etapa 3: Acessórios</h3>
+  <p>Paragrafo aqui</p>
+  
+  <label class="toggle">
+    <input type="checkbox">
+    <div class="track">
+      <div class="handle"></div>
+    </div>
+  </label>
+  <ion-item>
+    <ion-label> Gravação de chamadas </ion-label>
+    <ion-input placeholder="0-8" [(ngModel)]="AcGC"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> Correio de voz </ion-label>
+    <ion-input placeholder="0-160" [(ngModel)]="AcCV"></ion-input><!--Varia entre 0 e ramais-->
+  </ion-item>
+  <ion-item>
+    <ion-label> Mesa virtual </ion-label>
+    <ion-input placeholder="0-10" [(ngModel)]="AcMV"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> DISA </ion-label>
+    <ion-input placeholder="0-20" [(ngModel)]="AcDISA"></ion-input>
+  </ion-item>
+
+  <button ion-button color='secondary' block (click)="openResultados()">Continuar</button>
+</ion-content>
+<style>
+    ion-content{
+      background-color: lightgray;
+    }
+  </style>

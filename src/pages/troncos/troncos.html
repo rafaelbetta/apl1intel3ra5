@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Troncos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Etapa 1: Troncos</h3>
+  <p>
+    Informe a quantidade de cada item:<br>
+    A quantidade máxima de alguns campos serão automaticamente alteradas de acordo com o preenchimento do campo anterior.
+  </p>
+  <p>O numero máximo de troncos disponíveis é 60</p>
+  <ion-item>
+    <ion-label> Troncos Digitais</ion-label>
+    <ion-input id="di" placeholder="0-60" min=0 type=number max=60 [(ngModel)]="TrDi"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> Troncos Analógicos</ion-label>
+    <ion-input [(ngModel)]="TrAn" placeholder="0-24"  class="input" min=0 type=number max=24></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> Troncos GSM</ion-label>
+    <ion-input id="gsm" placeholder="0-24" min=0 type=number max=24 [(ngModel)]="TrGSM"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> Troncos IP</ion-label>
+    <ion-input id="ip" placeholder="0-60" min=0 type=number max=60 [(ngModel)]="TrIP"></ion-input>
+  </ion-item>
+
+  <button ion-button block color='secondary' (click)="openRamais()">Continuar</button>
+</ion-content>
+<style>
+ion-item{
+  display: flex;
+  align-content: space-around;
+}
+.input {
+align-self: flex-end;
+}
+
+  ion-content{
+    background-color: lightgray;
+  }
+
+</style>

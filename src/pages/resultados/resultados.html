@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Resultados</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <button ion-button block color='secondary' (click)="Resultar()">Simular</button>  
+  
+  <ion-card id="Resultado">
+      <img src=""/>
+      <ion-card-content>
+        <ion-card-title id="Title">
+          Resultado:
+        </ion-card-title>
+        <h3 id="Central"></h3>
+        <p id="Placas"></p>
+        <p id="Acc"></p>
+      </ion-card-content>
+    </ion-card>
+    <button ion-button color='secondary' block (click)="Salvar()">Salvar simulação</button> 
+    <button ion-button color='secondary' block (click)="openTroncos()">Filial</button> 
+
+  </ion-content>
+
+<style>
+#Title{
+  display: none;
+}
+
+  ion-content{
+    background-color: lightgray;
+  }
+
+</style>

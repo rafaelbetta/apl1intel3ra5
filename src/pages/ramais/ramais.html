@@ -1,0 +1,46 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Ramais</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Etapa 2: Ramais</h3>
+  <p>Paragrafo aqui</p>
+  <ion-item>
+    <ion-label> Ramais Digitais</ion-label>
+    <ion-input placeholder="0-48" min=0 type=number max=48 [(ngModel)]="RaDi"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> Ramais Analógicos</ion-label>
+    <ion-input placeholder="0-160" min=0 type=number max=160 id="input" [(ngModel)]="RaAn"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> Ramais IP </ion-label>
+    <ion-input placeholder="0-120" type=number min=0 max=120 [(ngModel)]="RaIP"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> Sem display</ion-label>
+    <ion-input placeholder="0-120" min=0 type=number max=120 [(ngModel)]="RaSD"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Com display</ion-label>
+    <ion-input placeholder="0-120" min=0 type=number max=120 [(ngModel)]="RaCD"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> Com vídeo chamada</ion-label>
+    <ion-input placeholder="0-120" min=0 type=number max=120 [(ngModel)]="RaVC"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> Softphone </ion-label>
+    <ion-input placeholder="0-120" min=0 type=number max=120 [(ngModel)]="RaSP"></ion-input>
+  </ion-item>
+
+  <button ion-button block color='secondary' (click)="openAcc()">Continuar</button>
+</ion-content>
+<style>
+    ion-content{
+      background-color: lightgray;
+    }
+  </style>

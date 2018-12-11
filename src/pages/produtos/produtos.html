@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Produtos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <div class="prodRow">
+    <button ion-button color='secondary' (click)="show(1)">Centrais</button>
+    <button ion-button color='secondary' (click)="show(2)">Placas</button>
+    <button ion-button color='secondary' (click)="show(3)">Acessórios</button>
+  </div>
+  <div class="card-container">
+    <div id="card-centrais">
+      <ion-card>
+        <img src=""/>
+        <ion-card-content>
+          <ion-card-title>
+            UnniTI 2000
+            </ion-card-title>
+          <p>
+            Solução eficaz para a integração de redes de voz e dados, ideal para pequenas e médias empresas. Com capacidade para até <b>6 placas adicionais</b>, ela chega a uma configuração máxima de 60 troncos IP, 96 ramais analógicos mais 120 ramais IP.
+          </p>
+          <p>Serial code: xxxx-xx</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <img src=""/>
+        <ion-card-content>
+          <ion-card-title>
+            UnniTI 3000
+            </ion-card-title>
+          <p>
+            Solução eficaz para a integração de redes de voz e dados, ideal para pequenas e médias empresas. Com capacidade para até <b>10 placas adicionais</b>, ela chega a uma configuração máxima de 60 troncos IP, 160 ramais analógicos mais 120 ramais IP.
+          </p>
+          <p>Serial code: xxxx-xx</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div id="card-placas">
+      <ion-card>
+        <img src=""/>
+        <ion-card-content>
+          <ion-card-title>
+            Placa de ramais
+            </ion-card-title>
+          <p>
+            Ramal: em uma rede telefônica privada (PABX), refere-se a qualquer ramo de uma rede deste tipo.
+          </p>
+          <p>
+            Placa Ramal analógico: 16 ramais; <br>
+            Placa ramal digital: 36 ramais; <br>
+            Placa ramal IP: 120 ramais (Teórico);
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div id="card-acc">
+      <ion-card>
+        <img src=""/>
+        <ion-card-content>
+          <ion-card-title>
+            Gravação de chamdas
+          </ion-card-title>
+          <p>
+            Grava chamadas
+          </p>
+          <p>
+            Serial code: xxxx-xx
+          </p>
+        </ion-card-content>
+      </ion-card>
+
+    </div>
+ </div>
+
+
+
+</ion-content>
+<style>
+.prodRow{
+  display: flex;
+  justify-content: center;
+}
+
+#card-centrais  {
+  display: flex;
+  flex-direction: column;
+}
+
+#card-placas, #card-acc {
+  display: none;
+  flex-direction: column;
+}
+
+  ion-content{
+    background-color: lightgray;
+  }
+
+</style>

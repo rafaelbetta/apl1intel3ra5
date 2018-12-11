@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Seletor UnniTI
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Bem vindo ao aplicativo seletor UnniTI</h3>
+  <p>Selecione alguma opção</p>
+  <button ion-button full block color='secondary' (click)="openTroncos()">Começar</button>
+  <button ion-button full block color='secondary' (click)="openSaved()">Simulações salvas</button>
+  <button ion-button full block color='secondary' (click)="openProdutos()">Produtos</button>
+  <button ion-button full block color='secondary' (click)="clear()">Limpa os dados</button>
+  <button ion-button full block color='secondary' (click)="load()">Verificação dos dados</button>
+</ion-content>
+<style>
+  ion-content{
+    background-color: lightgray;
+  }
+</style>
